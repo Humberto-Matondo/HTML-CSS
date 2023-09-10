@@ -4,113 +4,45 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth; /*para ter um eveito de scrooling qdo clicar no MENU*/
-}
-body{
+body {
+    font-size: 20px;
     font-family: sans-serif;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-    padding-top: 73px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    'cabecalho cabecalho'
+    'navecacao main'
+    'rodape rodape';
 }
 
-.grid::after {
-    content: '';
-    display: block;
-    clear: both;
+.grid div:nth-child(1) {
+    background-color: darkblue;
+    grid-area: cabecalho;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.grid .col {
-    width: 33.33%;
-    height: 300px;
-    float: left;
-    padding: 15px;
+.grid div:nth-child(2) {
+    background-color: darkred;
+    grid-area: navegacao;;
 }
 
-.grid .col-content {
-    width: 100%;
-    height: 100%;
-    background: red;
+.grid div:nth-child(3) {
+    background-color: darkgreen;
+    grid-area: main;
 }
 
-.menu {
-    width: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.845);
-}
-
-.menu ul {
-    list-style: none;
-    display: block;
-    max-width: 1200px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 30px;
-}
-
-.menu ul li {
-    float: left;
-}
-
-.menu ul li a {
-    display: block;
-    color: white;
-    padding: 20px;
-    text-decoration: none;
-    transition: all 300ms ease-in-out;
-}
-
-.menu ul li a:hover {
-   background: #333;
-}
-
-.full-page {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 30px;
-    padding-top: 73px;
-    height: 100vh;
-    background: silver;
-}
-
-
-.full-page-content {
-    max-width: 1200px;
-    padding: 0 30px;
-    padding-top: 73px;
-    margin: 0 auto;
-}
-
-
-@media(max-width:320px) {
-    .grid .col {
-        width: 100%;
-    }
-}
-
-@media (max-width:320px) {
-    .grid .col {
-        width: 100%;
-    }
-}
-
-@media (min-width:320px) and (max-width:768px) {
-    .grid .col {
-        width: 50%;
-    }
-}
-
-@media all and (max-width:320px) {
-    .grid .col {
-        width: 100%;
-    }
-}
-
-@media all and (min-width:320px) and (max-width:768px) {
-    .grid .col {
-        width: 50%;
-    }
+.grid div:nth-child(4) {
+    background-color:rgb(197, 255, 80);
+    grid-area: rodape;
 }
