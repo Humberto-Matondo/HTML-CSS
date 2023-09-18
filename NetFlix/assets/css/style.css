@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0 !important;
+}
+
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: ltr;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    background-color: rgb(250, 250, 250);
+}
+
+section {
+    color: rgb(90, 89, 89);
+}
+
+body {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/dc1cf82d-97c9-409f-b7c8-6ac1718946d6/ec4afc4c-3511-4f56-bfed-f51273e4f398/AO-en-20230911-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.600);
+}
+
+.img {
+    width: 220px;
+    height: 100px;
+}
+
+@media only screen and (min-width: 740px) {
+    nav {
+        background-color: rgba(0, 0, 0, 0.600);
+    }
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.600);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+@media only screen and (min-width: 740px) {
+    .background {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.600);
+    }
+}
+
+.sign-in {
+    order: 1;
+    background-color: rgba(0, 0, 0, 0.752);
+    width: 450px;
+    height: 600px;
+    border: 1px solid #000000; /* Borda vermelha */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+.contacts {
+    order: 2;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.752);
+}
+
+
+.contacts>p {
+    margin: 30px;
+    margin-left: 100px;
+    padding-left: 50px;
+}
+
+.contacts p {
+    margin-left: 100px;
+}
+
+.contacts .um {
+    margin-top: -30px;
+    margin-left: 50px;
+}
+
+.contacts .dois {
+    margin-top: -85px;
+    margin-left: 300px;
+
+}
+
+.contacts .tres {
+    margin: -65px 0;
+    padding-left: 570px;
+}
+
+.contacts .quatro {
+    margin: 23px;
+    margin-left: 750px;
+}
+
+.contacts a:hover {
+    text-decoration:underline;
+    color: rgb(255, 0, 0);
+}
+
+.sign-in a:hover {
+    text-decoration:underline;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: rgb(90, 89, 89);
+}
+
+.sign-in .um {
+    text-decoration: none;
+    color: rgb(90, 89, 89);
+}
+
+.sign-in .dois {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.sign-in .tres {
+    text-decoration: none;
+    color: rgb(46, 46, 208);
+}
+
