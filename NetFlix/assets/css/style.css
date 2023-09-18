@@ -30,8 +30,10 @@ nav {
 }
 
 .img {
-    width: 220px;
-    height: 100px;
+    width: 200px;
+    height: 120px;
+    margin-left: 20px;
+    margin-top: -20px;
 }
 
 @media only screen and (min-width: 740px) {
@@ -61,8 +63,10 @@ nav {
     background-color: rgba(0, 0, 0, 0.752);
     width: 450px;
     height: 600px;
-    border: 1px solid #000000; /* Borda vermelha */
-    border-radius: 10px; /* Cantos arredondados */
+    border: 1px solid #000000;
+    /* Borda vermelha */
+    border-radius: 10px;
+    /* Cantos arredondados */
 }
 
 .contacts {
@@ -105,12 +109,12 @@ nav {
 }
 
 .contacts a:hover {
-    text-decoration:underline;
+    text-decoration: underline;
     color: rgb(255, 0, 0);
 }
 
 .sign-in a:hover {
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .contacts a {
@@ -127,12 +131,13 @@ nav {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
 .sign-in .tres {
     text-decoration: none;
     color: rgb(46, 46, 208);
 }
 
-.sign-in .signIN{
+.sign-in .signIN {
     color: white;
     font-size: 30px;
     padding-left: 13%;
@@ -140,43 +145,56 @@ nav {
     margin: 4%;
 }
 
-.sign-in form{
+.sign-in form {
     padding-left: 13%;
     padding-top: 7%;
     margin: 4%;
 }
 
 form input[type="text"] {
-    background-color: #353434; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    border: 1px solid #000000; /* Borda vermelha */
-    border-radius: 4px; /* Cantos arredondados */
-    padding: 15px; /* Espaçamento interno */
+    background-color: #353434;
+    /* Cor de fundo */
+    color: #fff;
+    /* Cor do texto */
+    border: 1px solid #000000;
+    /* Borda vermelha */
+    border-radius: 4px;
+    /* Cantos arredondados */
+    padding: 15px;
+    /* Espaçamento interno */
     padding-right: 95px;
-    font-size: 15px; /* Tamanho da fonte */
+    font-size: 15px;
+    /* Tamanho da fonte */
 }
 
 
 
 form input[type="password"] {
-    background-color: #353434; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    border: 1px solid #000000; /* Borda vermelha */
-    border-radius: 4px; /* Cantos arredondados */
-    padding: 15px; /* Espaçamento interno */
+    background-color: #353434;
+    /* Cor de fundo */
+    color: #fff;
+    /* Cor do texto */
+    border: 1px solid #000000;
+    /* Borda vermelha */
+    border-radius: 4px;
+    /* Cantos arredondados */
+    padding: 15px;
+    /* Espaçamento interno */
     padding-right: 95px;
-    font-size: 15px; /* Tamanho da fonte */
+    font-size: 15px;
+    /* Tamanho da fonte */
 }
 
 form input[type="text"]:focus {
-    outline:transparent; 
+    outline: transparent;
 }
 
 form input[type="password"] {
-    outline:transparent; 
+    outline: transparent;
 }
 
-.sign-in .L-um{ /* hover ou algo */
+.sign-in .L-um {
+    /* hover ou algo */
     position: relative;
     top: 40%;
     padding: 1px;
@@ -184,7 +202,8 @@ form input[type="password"] {
     color: #888;
 }
 
-.sign-in .L-dois{ /* hover ou algo */
+.sign-in .L-dois {
+    /* hover ou algo */
     position: relative;
     padding: 1px;
     font-size: 10px;
@@ -197,14 +216,15 @@ form input[type="password"] {
     padding-left: 3px;
 }
 
-[atributo]{
+[atributo] {
     font-size: 13px;
     position: relative;
     font-family: sans-serif;
     top: 40px;
     margin-left: 80px;
 }
-[atributo="um"]{
+
+[atributo="um"] {
     font-size: 16px;
     position: relative;
     font-family: sans-serif;
@@ -213,7 +233,7 @@ form input[type="password"] {
     margin-left: 80px;
 }
 
-button{
+button {
     position: relative;
     left: 40%;
     font-family: sans-serif;
@@ -222,18 +242,20 @@ button{
     padding-left: 31%;
     padding-right: 31%;
     margin-left: -39%;
-    border: 10px solid red; /* Borda vermelha */
-    border-radius: 4px; /* Cantos arredondados */
+    border: 10px solid red;
+    /* Borda vermelha */
+    border-radius: 4px;
+    /* Cantos arredondados */
     background-color: red;
     color: white;
 }
 
-button:hover{
+button:hover {
     font-size: 18px;
     background-color: black;
 }
 
-.sign-in .um{
+.sign-in .um {
     position: relative;
     top: 9px;
     color: rgb(159, 156, 156);
@@ -243,7 +265,7 @@ button:hover{
 
 }
 
-.sign-in .L-treS{
+.sign-in .L-treS {
     position: relative;
     top: 9px;
     left: 10px;
@@ -252,6 +274,7 @@ button:hover{
     font-family: sans-serif;
 
 }
+
 form input[type="checkbox"] {
     position: relative;
     top: 10px;
