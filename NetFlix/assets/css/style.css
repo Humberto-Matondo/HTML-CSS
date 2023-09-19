@@ -110,7 +110,6 @@ nav {
 
 .contacts a:hover {
     text-decoration: underline;
-    color: rgb(255, 0, 0);
 }
 
 .sign-in a:hover {
@@ -138,11 +137,12 @@ nav {
 }
 
 .sign-in .signIN {
+    position: relative;
+    top: 20px;
     color: white;
     font-size: 30px;
-    padding-left: 13%;
-    padding-top: 7%;
-    margin: 4%;
+    padding-left: 17%;
+    padding-top: 8%;
 }
 
 .sign-in form {
@@ -237,10 +237,10 @@ button {
     position: relative;
     left: 40%;
     font-family: sans-serif;
-    margin-top: 25px;
+    margin-top: 1px;
     font-size: 18px;
-    padding-left: 31%;
-    padding-right: 31%;
+    padding-left: 30%;
+    padding-right: 30%;
     margin-left: -39%;
     border: 10px solid red;
     /* Borda vermelha */
@@ -251,16 +251,21 @@ button {
 }
 
 button:hover {
-    font-size: 18px;
-    background-color: black;
+   
 }
 
+@media only screen and (min-width: 360px){
+    .sign-in button {
+        max-width: 84%;
+        width: 100%;
+    }
+}
 .sign-in .um {
     position: relative;
     top: 9px;
     color: rgb(159, 156, 156);
     font-size: 12px;
-    padding-left: 90px;
+    padding-left: 95px;
     font-family: sans-serif;
 
 }
